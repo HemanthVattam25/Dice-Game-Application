@@ -26,14 +26,14 @@ This is a simple web-based game created to help teams make decisions by rolling 
   - A `div` for displaying the winner (`winner`).
   - A roll button with ID `roll`.
 
-  ![alt text](<Problem1_ThrowDice/media/game(op).png>)
+![alt text](<Code/media/game(op).png>)
 
 - **index.css**: Styles to:
 
   - Format the dice and button.
   - Apply background colors to indicate roll rankings (highest, second-highest, lowest, and tie).
 
-  ![alt text](<Problem1_ThrowDice/media/game(op).png>)
+![alt text](<Code/media/max(op).png>)
 
 - **index.js**: JavaScript to:
 
@@ -41,7 +41,7 @@ This is a simple web-based game created to help teams make decisions by rolling 
   - Determine the highest, second-highest, and lowest rolls.
   - Apply color coding and display the winner or handle ties.
 
-  ![alt text](<Problem1_ThrowDice/media/game(op).png>) ![alt text](<Problem1_ThrowDice/media/max(op).png>)
+![alt text](<Code/media/equal(op).png>)
 
 ## Instructions
 
