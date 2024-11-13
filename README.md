@@ -1,39 +1,52 @@
 # Throw Dice Game
 
-You and your two team members are working on a construct week project. An issue arises, and all three of you come up with feasible solutions. Since each person wants to implement their own solution, you decide to roll a dice to determine whose solution will be used.
+## Project Description
 
-This app simulates rolling three dice to randomly generate a number between 1 and 6 for each team member, with the highest roll deciding the winner.
+This is a simple web-based game created to help teams make decisions by rolling virtual dice. In this game, each dice represents a team member (Member A, Member B, and Member C), and the highest roll decides which team member's solution will be implemented. If two or more members roll the same highest number, a tie is indicated by a unique color.
 
-## Problem Statement
+## Features
 
-Create an app with three dice that show random numbers from 1 to 6. Each dice represents a team member:
+- **Three Dice Roll Simulation**: Each dice represents a team member:
+  - Dice 1 for Member A
+  - Dice 2 for Member B
+  - Dice 3 for Member C
+- **Roll Button**: A button to roll all three dice at once, generating random numbers between 1 and 6.
+- **Winner Announcement**: Displays the winning team member with the highest roll at the top.
+- **Color Coding for Dice Results**:
+  - **Green** for the highest roll.
+  - **Yellow** for the second-highest roll.
+  - **Red** for the lowest roll.
+  - **Blue** for dice showing tied values.
 
-- Dice 1 represents Member A
-- Dice 2 represents Member B
-- Dice 3 represents Member C
+## Files and Structure
 
-The app should include a button to roll all three dice simultaneously and determine the winner based on the highest roll.
+- **index.html**: Contains the HTML structure with:
 
-## Requirements
+  - Three `div` elements representing each dice with IDs (`member-1`, `member-2`, `member-3`).
+  - A `div` for displaying the winner (`winner`).
+  - A roll button with ID `roll`.
 
-1. **HTML Structure:**
+  ![alt text](<Problem1_ThrowDice/media/game(op).png>)
 
-   - Create an `index.html` file.
-   - Create three `div` elements representing the three dice, each showing a random number between 1 and 6.
-   - Add a `div` at the top to display the winner.
-   - Add a button to roll all three dice.
+- **index.css**: Styles to:
 
-2. **ID Assignments:**
+  - Format the dice and button.
+  - Apply background colors to indicate roll rankings (highest, second-highest, lowest, and tie).
 
-   - First dice should have the ID `member-1`.
-   - Second dice should have the ID `member-2`.
-   - Third dice should have the ID `member-3`.
-   - The roll button should have the ID `roll`.
-   - The winner display should have the ID `winner`.
+  ![alt text](<Problem1_ThrowDice/media/game(op).png>)
 
-3. **Functionality:**
-   - Clicking the "ROLL THE DICE" button should roll all three dice and display a random number (1 to 6) in each dice `div`.
-   - The `div` with the highest score will display in green.
-   - The `div` with the second highest score will display in yellow.
-   - The `div` with the lowest score will display in red.
-   - In case of a tie, dice with the same score should appear in blue.
+- **index.js**: JavaScript to:
+
+  - Simulate the dice rolls.
+  - Determine the highest, second-highest, and lowest rolls.
+  - Apply color coding and display the winner or handle ties.
+
+  ![alt text](<Problem1_ThrowDice/media/game(op).png>) ![alt text](<Problem1_ThrowDice/media/max(op).png>)
+
+## Instructions
+
+1. Open `index.html` in a browser.
+2. Click the "ROLL THE DICE" button to roll all three dice.
+3. Observe the results with color-coded dice and winner display.
+
+This app provides a fair, random method for selecting a solution among team members and a fun way to make group decisions.
